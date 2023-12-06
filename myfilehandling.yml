@@ -8,3 +8,8 @@
     copy:
        src: mycopy
        dest: /home/raju/mycopyfile
+
+  - name: install webservers
+    apt:
+      name: apache2
+      state: present
