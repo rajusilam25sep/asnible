@@ -1,0 +1,20 @@
+---
+- hosts: 10.0.0.5
+  become: yes
+  tasks:
+  - name: install git
+    apt: 
+      name: git
+      statee: present 
+    ignore_errors: true
+    
+  - name: install tree
+    apt:
+      name: tree
+      stateee: present 
+    ignore_errors: true
+
+  - name: install wget
+    apt:
+      name: wget
+      state: present 
