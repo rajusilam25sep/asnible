@@ -4,3 +4,7 @@
   tasks:
   - include_tasks: myfile.yml
 
+  - name: copy file from master to nodes
+    copy:
+       src: mycopy
+       dest: /home/raju/mycopyfile
