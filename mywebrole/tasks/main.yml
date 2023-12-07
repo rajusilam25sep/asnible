@@ -1,2 +1,6 @@
 ---
-# tasks file for mywebrole
+- hosts: mywebservers
+  become: yes
+  roles: 
+  - {role: mywebrole, when: ansible_os_famil =="Debian"}
+
