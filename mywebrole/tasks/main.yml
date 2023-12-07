@@ -1,6 +1,5 @@
 ---
-- hosts: mywebservers
-  become: yes
-  roles: 
-  - {role: mywebrole, when: ansible_os_famil =="Debian"}
-
+- name: i want to install webservers
+  apt: 
+    name: apache2
+    state: present
