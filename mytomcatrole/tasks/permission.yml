@@ -1,0 +1,6 @@
+---
+- name: grant tomcat ownership on tomcat folder
+  command: /home/raju/apache-tomcat-10.0.20.tar.gz
+
+- name: give execute permission on bin folder
+  command: sudo chmod -R u+x /opt/tomcat/bin
